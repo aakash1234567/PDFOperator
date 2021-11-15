@@ -17,7 +17,7 @@ def hello_world():
         print("File decrypted Successfully.")
     else:
         print("File already decrypted.")
-    return send_file("./dummy_file.pdf",as_attachment=True,mimetype="application/pdf",download_name=f_name)
+    return send_file("./dummy_file.pdf",as_attachment=True,mimetype="application/pdf")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
