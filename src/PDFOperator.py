@@ -1,5 +1,5 @@
 import pikepdf
-from flask import Flask, send_file
+from flask import Flask, request,send_file
 app = Flask(__name__)
 app.config["SRC"] = "./src"
 @app.route('/',methods=['POST'])
